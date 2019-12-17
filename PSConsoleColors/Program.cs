@@ -43,7 +43,10 @@ namespace PSConsoleColors
 
             for (int i = 0; i < 255; i++)
             {
-                Console.Write("\x1b[48;5;" + i + "m" + i.ToString().PadLeft(5));
+                //Console.Write("\x1b[48;5;" + i + "m" + i.ToString().PadLeft(5)); //background
+                //Console.Write("\x1b[38;5;" + (255-i) + "m" + i.ToString().PadLeft(5)); //foreground
+
+                Console.WriteLine("\x1b[48;5;" + i + "m" + "    pawel");
             }
 
             Console.ReadLine();
